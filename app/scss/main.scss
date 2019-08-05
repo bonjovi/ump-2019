@@ -3,8 +3,12 @@
 @import 'utils/variables';
 @import 'base/fonts';
 @import 'utils/placeholders';
-@import 'build/blocks';
 @import 'base/media';
+
+@import 'blocks/common/pagewrapper';
+@import 'blocks/common/header';
+@import 'blocks/common/main';
+@import 'blocks/common/footer';
 
 @import 'blocks/common/text';
 @import 'blocks/common/title';
@@ -12,3 +16,5 @@
 @import 'blocks/common/textarea';
 @import 'blocks/common/checkbox';
 @import 'blocks/common/button';
+
+@import 'blocks/common/topmenu';

@@ -5790,9 +5790,36 @@ textarea:-ms-input-placeholder {
   font-size: 1rem;
   color: white; }
 
+.pagewrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh; }
+
+.header__phones {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header__links {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.main {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
 .text {
   font-family: 'OpenSans Regular';
-  color: red; }
+  color: orange; }
   .text_small {
     font-size: 12px; }
   .text_medium {
@@ -5952,3 +5979,11 @@ label {
     background-color: #ff3d3d;
     border-color: #ff3d3d;
     color: #fff; }
+
+.topmenu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }

@@ -1,0 +1,11 @@
+.header {
+
+    &__phones {
+        display: flex;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
