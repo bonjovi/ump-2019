@@ -1,16 +1,31 @@
 .text {
     font-family: 'OpenSans Regular';
     color: orange;
+
+    &_xsmall {
+        font-size: 12px;
+        line-height: 14px;
+    }
     
     &_small {
-        font-size: 12px;
+        font-size: 13px;
+        line-height: 18px;
     }
 
     &_medium {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 24px;
     }
 
-    &_large {
-        font-size: 16px;
+
+
+    &_lightgrey {
+        color: #a7a7a7;
     }
+
+    &_grey {
+        color: #585858;
+    }
+
+    
 }
