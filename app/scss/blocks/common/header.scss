@@ -1,11 +1,35 @@
 .header {
 
+    &__top {
+        padding: 15px 0;
+    }
+
     &__phones {
         display: flex;
+    }
+
+    &__phone-icon {
+        margin-right: 21px;
+    }
+
+    &__callback-icon {
+        margin-right: 17px;
+    }
+
+    &__login-icon {
+        margin-right: 17px;
+    }
+
+    &__phone {
+        margin-right: 16px;
     }
 
     &__links {
         display: flex;
         justify-content: flex-end;
+    }
+
+    &__link {
+        margin-right: 16px;
     }
 }

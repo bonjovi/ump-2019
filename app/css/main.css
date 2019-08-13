@@ -5798,10 +5798,25 @@ textarea:-ms-input-placeholder {
           flex-direction: column;
   height: 100vh; }
 
+.header__top {
+  padding: 15px 0; }
+
 .header__phones {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.header__phone-icon {
+  margin-right: 21px; }
+
+.header__callback-icon {
+  margin-right: 17px; }
+
+.header__login-icon {
+  margin-right: 17px; }
+
+.header__phone {
+  margin-right: 16px; }
 
 .header__links {
   display: -webkit-flex;
@@ -5811,6 +5826,9 @@ textarea:-ms-input-placeholder {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+.header__link {
+  margin-right: 16px; }
+
 .main {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -5818,7 +5836,7 @@ textarea:-ms-input-placeholder {
 
 .text {
   font-family: 'OpenSans Regular';
-  color: orange; }
+  color: #585858; }
   .text_xsmall {
     font-size: 12px;
     line-height: 14px; }
