@@ -1,3 +1,11 @@
 .search {
-    display: flex;
+    &__input {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid #ededed;
+        height: 20px;
+        box-sizing: content-box;
+        background: url(../img/search.png) center right no-repeat;
+    }
 }
