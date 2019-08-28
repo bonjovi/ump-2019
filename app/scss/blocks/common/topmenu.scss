@@ -1,9 +1,28 @@
 .topmenu {
+    height: 43px;
+    display: flex;
+    align-items: center;
     
     &__list {
         list-style: none;
         margin: 0; 
         padding: 0;
         display: flex;
+    }
+
+    &__link {
+        font-family: 'MuseoSans Regular';
+        color: #000000;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-right: 50px;
+        text-transform: uppercase;
+        transition: color 0.5s;
+
+        &:hover {
+            text-decoration: none;
+            color: #034ea2;
+        }
     }
 }

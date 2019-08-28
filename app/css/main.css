@@ -5763,6 +5763,30 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'MuseoSans Light';
+  src: url("../fonts/MuseoSans300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MuseoSans Regular';
+  src: url("../fonts/MuseoSans500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MuseoSans Bold';
+  src: url("../fonts/MuseoSans700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MuseoSans ExtraBold';
+  src: url("../fonts/MuseoSans900.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-family: 'OpenSans Regular';
@@ -5799,7 +5823,8 @@ textarea:-ms-input-placeholder {
   height: 100vh; }
 
 .header__top {
-  padding: 15px 0; }
+  padding: 15px 0;
+  border-bottom: 1px solid #ededed; }
 
 .header__phones {
   display: -webkit-flex;
@@ -5829,6 +5854,10 @@ textarea:-ms-input-placeholder {
 .header__link {
   margin-right: 16px; }
 
+.header__main {
+  padding: 30px 0;
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.1); }
+
 .main {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -5852,17 +5881,20 @@ textarea:-ms-input-placeholder {
     color: #585858; }
 
 .title {
-  font-family: 'MuseoSans';
+  font-family: 'MuseoSans Regular';
   color: #000000; }
   .title_small {
+    font-family: 'MuseoSans Bold';
     font-size: 14px;
     line-height: 18px;
     font-weight: 700; }
   .title_medium {
+    font-family: 'MuseoSans Bold';
     font-size: 16px;
     line-height: 20px;
     font-weight: 700; }
   .title_large {
+    font-family: 'MuseoSans ExtraBold';
     font-size: 24px;
     line-height: 30px;
     font-weight: 900; }
@@ -5992,10 +6024,35 @@ label {
     border-color: #ff3d3d;
     color: #fff; }
 
-.topmenu__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.topmenu {
+  height: 43px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .topmenu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .topmenu__link {
+    font-family: 'MuseoSans Regular';
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-right: 50px;
+    text-transform: uppercase;
+    transition: color 0.5s; }
+    .topmenu__link:hover {
+      text-decoration: none;
+      color: #034ea2; }
+
+.search {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
