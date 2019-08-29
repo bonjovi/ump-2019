@@ -21,11 +21,35 @@
             display: block;
         }
 
-        & ul[counter=1] {
+        & ul[counter=first] {
             display: none;
 
             &.visible {
-                display: block;
+                display: flex;
+            }
+        }
+
+        & ul[counter=second] {
+            display: none;
+
+            &.visible {
+                display: flex;
+            }
+        }
+
+        & ul[counter=third] {
+            display: none;
+
+            &.visible {
+                display: flex;
+            }
+        }
+
+        & ul[counter=fourth] {
+            display: none;
+
+            &.visible {
+                display: flex;
             }
         }
     }
@@ -56,6 +80,24 @@
     &__item {
         margin-right: 45px;
         line-height: 14px;
+    }
+
+    &__link {
+        & img:nth-child(1) {
+            display: block;
+        }
+        & img:nth-child(2) {
+            display: none;
+        }
+    }
+
+    &__link:hover {
+        & img:nth-child(1) {
+            display: none;
+        }
+        & img:nth-child(2) {
+            display: block;
+        }
     }
 
 }

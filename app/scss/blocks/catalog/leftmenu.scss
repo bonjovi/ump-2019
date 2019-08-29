@@ -1,0 +1,13 @@
+.leftmenu {
+    &__first {
+        padding: 20px 30px;
+        box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.10);
+        font-family: 'MuseoSans Bold';
+        color: #3d4651;
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+}

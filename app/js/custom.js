@@ -18,8 +18,18 @@ $(document).ready(function(){
         $('.dropdown-topmenu__top').toggleClass('visible');
     });
 
-    $('.dropdown-topmenu__top ul a').hover(function() {
+    $('.dropdown-topmenu__top, .dropdown-topmenu__center').hover(function() {
         $('.dropdown-topmenu__center').toggleClass('visible');
+    });
+
+    $('.dropdown-topmenu__top ul a').click(function(e) {
+        e.preventDefault();
+        $('.dropdown-topmenu__center ul').removeClass('visible');
         $('.dropdown-topmenu__center ul[counter=' + $(this).attr('counter') + ']').toggleClass('visible');
     });
+
+    $('.slider').hover(function() {
+        $('.dropdown-topmenu__top').removeClass('visible');
+    });
+
 });
