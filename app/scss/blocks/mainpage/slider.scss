@@ -4,4 +4,70 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    & .owl-stage {
+        display: flex;
+    }
+
+    & .owl-nav {
+        display: none;
+    }
+
+    & .owl-dots {
+        margin: -70px auto 50px auto;
+        text-align: center;
+
+        & .owl-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: 2px solid #d7d7d7;
+            cursor: pointer;
+
+            &.active {
+                background-color: #ff3f30;
+                border-color: #ff3f30;
+            }
+        }
+    }
+
+    &__content {
+        width: 340px;
+        margin: 75px 0 0 195px;
+    }
+
+    &__text {
+        line-height: 24px;
+    }
+
+    &__title {
+        font-family: 'MuseoSans Regular';
+        color: #000000;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        &_bold {
+            font-family: 'MuseoSans ExtraBold';
+        }
+    }
+
+    &__button {
+        border: 2px solid #d5d5d5;
+        font-family: 'MuseoSans Bold';
+        color: #000000;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 20px 80px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
