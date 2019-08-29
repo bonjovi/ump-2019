@@ -5,6 +5,7 @@
 @import 'utils/placeholders';
 @import 'base/media';
 
+@import 'blocks/common/base';
 @import 'blocks/common/pagewrapper';
 @import 'blocks/common/header';
 @import 'blocks/common/main';
@@ -18,8 +19,11 @@
 @import 'blocks/common/button';
 
 @import 'blocks/common/topmenu';
+@import 'blocks/common/dropdown-topmenu';
 @import 'blocks/common/search';
 
 
 // MAINPAGE
 @import 'blocks/mainpage/slider';
+@import 'blocks/mainpage/intro';
+@import 'blocks/mainpage/directions';

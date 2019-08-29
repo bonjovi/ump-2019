@@ -38,4 +38,25 @@
         padding: 30px 0;
         box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.10);
     }
+
+    &__searchbutton {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: transparent url(../img/search.png) 0 0 no-repeat;
+        float: right;
+        margin-top: 8px;
+        transition: opacity 0.5s;
+        border: none;
+        outline: none;
+
+        &:focus {
+            background: transparent url(../img/close.png) 0 0 no-repeat;
+            outline: none;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
 }
