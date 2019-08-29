@@ -5,16 +5,35 @@
     
     &__top {
         padding: 35px 0;
+        display: none;
+
+        &.visible {
+            display: block;
+        }
     }
 
     &__center {
         padding: 30px 0 40px 0;
         border-top: 1px solid #ededed;
+        display: none;
+
+        &.visible {
+            display: block;
+        }
+
+        & ul[counter=1] {
+            display: none;
+
+            &.visible {
+                display: block;
+            }
+        }
     }
 
     &__bottom {
         padding: 30px 0 40px 0;
         border-top: 1px solid #ededed;
+        display: none;
     }
 
     &__list {

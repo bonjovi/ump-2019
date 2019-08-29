@@ -9,4 +9,17 @@ $(document).ready(function(){
     });
 
     $('.owl-dot').click(function(){owl.trigger('to.owl.carousel', [$(this).index(), 300]);});
+
+
+
+
+    $('.topmenu__link.products').on('click', function(e) {
+        e.preventDefault();
+        $('.dropdown-topmenu__top').toggleClass('visible');
+    });
+
+    $('.dropdown-topmenu__top ul a').hover(function() {
+        $('.dropdown-topmenu__center').toggleClass('visible');
+        $('.dropdown-topmenu__center ul[counter=' + $(this).attr('counter') + ']').toggleClass('visible');
+    });
 });

@@ -6092,13 +6092,18 @@ label {
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed; }
   .dropdown-topmenu__top {
-    padding: 35px 0; }
+    padding: 35px 0;
+    display: none; }
+    .dropdown-topmenu__top.visible {
+      display: block; }
   .dropdown-topmenu__center {
     padding: 30px 0 40px 0;
-    border-top: 1px solid #ededed; }
+    border-top: 1px solid #ededed;
+    display: none; }
   .dropdown-topmenu__bottom {
     padding: 30px 0 40px 0;
-    border-top: 1px solid #ededed; }
+    border-top: 1px solid #ededed;
+    display: none; }
   .dropdown-topmenu__list {
     list-style: none;
     padding: 0;
