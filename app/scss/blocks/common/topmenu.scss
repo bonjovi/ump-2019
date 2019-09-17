@@ -2,6 +2,51 @@
     height: 43px;
     display: flex;
     align-items: center;
+    position: relative;
+
+    &__item {
+        padding: 42px 0;
+
+        & ul {
+            display: none;
+            position: absolute;
+            margin-top: 42px;
+            z-index: 1;
+        }
+
+        &:hover ul {
+            display: flex;
+        }
+    }
+
+    &__submenu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #fff;
+        padding: 42px 0;
+
+        &:before {
+            content: "";
+            background-color: #fff;
+            height: 100%;
+            width: 2000px;
+            position: absolute;
+            left: -2000px;
+            margin-top: -42px;
+        }
+
+        &:after {
+            content: "";
+            background-color: #fff;
+            height: 100%;
+            width: 2000px;
+            position: absolute;
+            right: -2000px;
+            left: auto;
+            margin-top: -82px;
+        }
+    }
     
     &__list {
         list-style: none;
