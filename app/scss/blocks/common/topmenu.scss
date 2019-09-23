@@ -10,11 +10,14 @@
         & ul {
             display: none;
             position: absolute;
-            margin-top: 42px;
             z-index: 1;
         }
 
-        &:hover ul {
+        &:hover > a {
+            color: #034ea2;
+        }
+
+        &:hover > ul {
             display: flex;
         }
     }

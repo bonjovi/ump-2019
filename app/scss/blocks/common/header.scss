@@ -1,8 +1,10 @@
 .header {
-
     &__top {
         padding: 15px 0;
         border-bottom: 1px solid #ededed;
+        background-color: #fff;
+        position: relative;
+        z-index: 99999;
     }
 
     &__phones {
@@ -32,6 +34,10 @@
 
     &__link {
         margin-right: 16px;
+
+        &:focus {
+            text-decoration: none;
+        }
     }
 
     &__main {
@@ -59,4 +65,20 @@
             opacity: 0.5;
         }
     }
+}
+
+
+#header__callback-content, #header__login-content {
+    display: none;
+    position: absolute;
+    top: 50px !important;
+    left: 50%;
+}
+
+#header__callback-content {
+    margin-left: 289px;
+}
+
+#header__login-content {
+    margin-left: 394px;  
 }

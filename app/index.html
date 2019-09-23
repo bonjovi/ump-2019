@@ -6,12 +6,17 @@
 	<title>АО "ЮМП"</title>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
+	<!-- <script
+  	src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  	integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  	crossorigin="anonymous"></script> -->
 </head>
 <body>
 	<div class="pagewrapper">
-
 		<header class="header">
 			<div class="header__top">
 				<div class="container">
@@ -34,14 +39,22 @@
 							</div>
 						</div><!-- /.header__phones -->
 						<div class="header__links col-lg-6">
-							<a class="header__link">
+							<a class="header__link" data-fancybox data-src="#header__callback-content" href="javascript:;">
 								<img src="img/callback.png" alt="Обратный звонок" class="header__callback-icon">
 								<span class="text text_xsmall text_lightgrey">Обратный звонок</span>
 							</a>
-							<a class="header__link">
+							<div id="header__callback-content">
+								<h2>Hello</h2>
+								<p>You are awesome.</p>
+							</div>
+							<a class="header__link" data-fancybox data-src="#header__login-content" href="javascript:;">
 								<img src="img/login.png" alt="Вход для дилеров" class="header__login-icon">
 								<span class="text text_xsmall text_lightgrey">Вход для дилеров</span>
 							</a>
+							<div id="header__login-content">
+								<h2>Hello 2</h2>
+								<p>You are awesome.</p>
+							</div>
 						</div><!-- /.header__links -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->
@@ -56,12 +69,30 @@
 							<ul class="topmenu__list">
 								<li class="topmenu__item">
 									<a href="" class="topmenu__link">Компания</a>
-									<ul class="topmenu__submenu">
+									<ul class="dropdown-topmenu__list">
 										<li class="dropdown-topmenu__item">
-											<a href="#" class="text text_xsmall dropdown-topmenu__link">Текст</a>
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">История</a>
 										</li>
 										<li class="dropdown-topmenu__item">
-											<a href="#" class="text text_xsmall dropdown-topmenu__link">Текст</a>
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Новости</a>
+										</li>
+										<li class="dropdown-topmenu__item">
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Акции</a>
+										</li>
+										<li class="dropdown-topmenu__item">
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Вакансии</a>
+										</li>
+										<li class="dropdown-topmenu__item">
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Выставки</a>
+										</li>
+										<li class="dropdown-topmenu__item">
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Сертификаты</a>
+										</li>
+										<li class="dropdown-topmenu__item">
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Торговые марки</a>
+										</li>
+										<li class="dropdown-topmenu__item">
+											<a href="#" class="text text_xsmall dropdown-topmenu__link">Политика конфиденциальности</a>
 										</li>
 									</ul>
 								</li>
@@ -70,6 +101,57 @@
 									<ul class="dropdown-topmenu__list">
 										<li class="dropdown-topmenu__item">
 											<a href="#" class="text text_xsmall dropdown-topmenu__link" counter="first">Маркировка<br>BRADY</a>
+											<ul class="dropdown-topmenu__list dropdown-topmenu__level2">
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">
+														<img src="/img/products/topmenu/01/01.svg" alt="">
+														<img src="/img/products/topmenu/01/01-2.svg" alt="">
+														Портативные принтеры этикеток
+													</a>
+													<ul class="dropdown-topmenu__list dropdown-topmenu__list_last">
+														<li class="dropdown-topmenu__item text text_lightgrey text_xsmall">
+															Электрогидравлические аккумуляторные инструменты для опрессовки и резки являются наиболее удобным решением для соответствующих применений. Чтобы приложить необходимое усилие, достаточно лишь коснуться кнопки. Инструменты предназначены для работы одной рукой. Отличительной особенностью всех инструментов является двухскоростной режим работы гидравлической системы с высокой скоростью движения поршня к проводу/кабелю и автоматическим замедлением его движения при выполнении операции. 
+														</li>
+													</ul>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">
+														<img src="/img/products/topmenu/01/02.svg" alt="">
+														<img src="/img/products/topmenu/01/02-2.svg" alt="">
+														Настольные принтеры этикеток
+													</a>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">
+														<img src="/img/products/topmenu/01/03.svg" alt="">
+														<img src="/img/products/topmenu/01/03-2.svg" alt="">
+														Принтеры знаков безопасности
+													</a>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">
+														<img src="/img/products/topmenu/01/04.svg" alt="">
+														<img src="/img/products/topmenu/01/04-2.svg" alt="">
+														Принтеры-аппликаторы/Другое
+													</a>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">
+														<img src="/img/products/topmenu/01/05.svg" alt="">
+														<img src="/img/products/topmenu/01/05-2.svg" alt="">
+														Материалы/Этикетки/Риббоны
+													</a>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">Маркировка на офисном оборудовании</a>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">Готовая маркировка для провода/кабеля</a>
+												</li>
+												<li class="dropdown-topmenu__item">
+													<a href="#" class="text text_xsmall dropdown-topmenu__link">Программное обеспечение</a>
+												</li>
+											</ul>
 										</li>
 										<li class="dropdown-topmenu__item">
 											<a href="#" class="text text_xsmall dropdown-topmenu__link" counter="second">Механическая<br>маркировка</a>
@@ -122,7 +204,7 @@
 					<input class="search__input" type="text" placeholder="Введите фразу для поиска...">
 				</div>
 			</div>
-			<div class="dropdown-topmenu">
+			<!-- <div class="dropdown-topmenu">
 				<div class="dropdown-topmenu__top">
 					<div class="container">
 						
@@ -315,7 +397,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="slider">
 				<div class="slider__item" style="background-image: url(img/banners/bmp61.png);">
 					<div class="container">
@@ -591,6 +673,7 @@
 	</div><!-- /.pagewrapper -->
 	
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
