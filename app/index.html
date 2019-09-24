@@ -43,17 +43,31 @@
 								<img src="img/callback.png" alt="Обратный звонок" class="header__callback-icon">
 								<span class="text text_xsmall text_lightgrey">Обратный звонок</span>
 							</a>
-							<div id="header__callback-content">
-								<h2>Hello</h2>
-								<p>You are awesome.</p>
+							<div id="header__callback-content" class="header__popup">
+								<div class="text text_xsmall text_lightgrey">
+									Закажите обратный звонок и мы сами позвоним Вам!
+								</div>
+								<form action="#" class="header__popup-form">
+									<input type="text" name="" id="" class="header__input" placeholder="Ваше имя">
+									<input type="text" name="" id="" class="header__input header__input_phone-number" placeholder="Номер телефона">
+									<button class="button header__button">Заказать звонок</button>
+								</form>
 							</div>
 							<a class="header__link" data-fancybox data-src="#header__login-content" href="javascript:;">
 								<img src="img/login.png" alt="Вход для дилеров" class="header__login-icon">
 								<span class="text text_xsmall text_lightgrey">Вход для дилеров</span>
 							</a>
-							<div id="header__login-content">
-								<h2>Hello 2</h2>
-								<p>You are awesome.</p>
+							<div id="header__login-content" class="header__popup">
+								<div class="text text_xsmall text_lightgrey text_pink">
+									Ошибка
+								</div>
+								<form action="#" class="header__popup-form">
+									<input type="text" name="" id="" class="header__input" placeholder="Логин">
+									<input type="text" name="" id="" class="header__input header__input_password" placeholder="Пароль">
+									<button class="button header__button">Войти</button>
+								</form>
+								<a href="#" class="text text_xsmall header__callback-link">Не помню пароль</a>
+								<a href="#" class="text text_xsmall header__callback-link">Как стать дилером?</a>	
 							</div>
 						</div><!-- /.header__links -->
 					</div><!-- /.row -->
@@ -197,6 +211,9 @@
 							<input href="#" class="header__searchbutton" type="text">
 						</div>
 					</div><!-- /.row -->
+					<div class="header__searchcontainer">
+						<input href="#" class="" type="text">
+					</div>
 				</div><!-- /.container -->
 			</div><!-- /.header__main -->
 			<div class="search">

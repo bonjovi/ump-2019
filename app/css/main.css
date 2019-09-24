@@ -5885,6 +5885,39 @@ a {
   .header__searchbutton:hover {
     opacity: 0.5; }
 
+.header__popup {
+  padding: 30px;
+  width: 320px;
+  background-color: #f9f9f9; }
+
+.header__popup-form {
+  margin: 20px 0; }
+
+.header__input {
+  padding: 20px;
+  border: 1px solid #ededed;
+  outline: none;
+  width: 100%; }
+
+.header__input_phone-number, .header__input_password {
+  margin-top: -1px; }
+
+.header__button {
+  width: 100% !important;
+  padding: 20px !important;
+  margin: 25px 0 30px 0; }
+
+.header__callback-link {
+  display: block;
+  margin-bottom: 15px;
+  color: #6b93bf !important;
+  text-decoration: none;
+  transition: color 0.5s; }
+  .header__callback-link:last-child {
+    margin-bottom: 0; }
+  .header__callback-link:hover {
+    color: #185093 !important; }
+
 #header__callback-content, #header__login-content {
   display: none;
   position: absolute;
@@ -5892,10 +5925,10 @@ a {
   left: 50%; }
 
 #header__callback-content {
-  margin-left: 289px; }
+  margin-left: 278px; }
 
 #header__login-content {
-  margin-left: 394px; }
+  margin-left: 278px; }
 
 .main {
   -webkit-flex: 1 0 auto;
@@ -5937,6 +5970,8 @@ a {
     color: #a7a7a7; }
   .text_grey {
     color: #585858; }
+  .text_pink {
+    color: #ee7878; }
 
 .title {
   font-family: 'MuseoSans Regular';
