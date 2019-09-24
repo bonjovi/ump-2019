@@ -28,6 +28,22 @@ $(document).ready(function(){
         $('.fancybox-container').hide();
     });
 
+    $('.header__searchbutton').on('click', function() {
+        $(this).toggleClass('header__searchbutton_clicked');
+        $('.header__searchcontainer').toggleClass('header__searchcontainer_shown');
+    });
+
+    $('.leftmenu__link').on('click', function(e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('leftmenu__item_active');
+        $(this).parent().find('> .leftmenu__sublist').slideToggle();
+    });
+
+    $('.leftmenu__sublink').on('click', function(e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('leftmenu__subitem_active');
+        $(this).parent().find('> .leftmenu__sublist').slideToggle();
+    });
 
 
 
